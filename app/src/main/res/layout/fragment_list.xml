@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/qrResultConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:text="登録日時"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="145dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="入力値"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text="入力元"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <ScrollView android:layout_height="360dp">
+
+                <TableLayout
+                    android:id="@+id/score_table"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TableRow android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="145dp"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:text="2568,0,2810452,
+                        45KVA発電機(単相切替型)"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:text="未"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="145dp"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:text="685,0,2812200,
+                        220KVA発電機"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:text="未"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:text="20/05/10 12:30"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="145dp"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:text="2563,0,2810452,
+                        13KVA発電機(単相切替型)"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:text="QR"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:text="20/05/10 12:28"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="145dp"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:text="4515,0,2810451,
+                        45KVA発電機(超低騒音)"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:text="QR"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:text="20/05/10 12:27"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="145dp"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:text="546,0,2810135,
+                        13KVA発電機(単相切替型)"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:text="手動"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:text="20/05/10 12:22"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="145dp"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:text="498,0,2810600,
+                        60KVA発電機"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:text="QR"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:text="20/05/10 12:18"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="145dp"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:text="731,0,2810660,
+                        60KVA発電機 (ｵｲﾙｶﾞｰﾄﾞ付)"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:text="QR"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:text="20/05/10 12:18"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="145dp"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:text="1306,0,2810130,
+                        13KVA発電機"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:text="QR"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:text="20/05/10 12:20"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="145dp"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:text="381,0,2812200,
+                        220KVA発電機"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_column="2"
+                            android:layout_weight="1"
+                            android:text="QR"
+                            android:textColor="#000000" />
+                    </TableRow>
+                </TableLayout>
+            </ScrollView>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/goToHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="データIMPORT"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nextButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="データEXPORT"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/goToHomeButton"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homeConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/qrReaderButton"
+            android:layout_width="@dimen/home_button_width"
+            android:layout_height="@dimen/home_button_height"
+            android:paddingStart="@dimen/button_padding"
+            android:paddingEnd="@dimen/button_padding"
+            android:text="@string/qrReaderButtonText"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            android:background="@drawable/custom_button"
+            app:layout_constraintBottom_toTopOf="@+id/inputButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/inputButton"
+            android:layout_width="@dimen/home_button_width"
+            android:layout_height="@dimen/home_button_height"
+            android:paddingStart="@dimen/button_padding"
+            android:paddingEnd="@dimen/button_padding"
+            android:text="@string/inputButtonText"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            android:background="@drawable/custom_button"
+            app:layout_constraintBottom_toTopOf="@+id/listButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qrReaderButton" />
+
+        <Button
+            android:id="@+id/listButton"
+            android:layout_width="@dimen/home_button_width"
+            android:layout_height="@dimen/home_button_height"
+            android:paddingStart="@dimen/button_padding"
+            android:paddingEnd="@dimen/button_padding"
+            android:text="@string/listButtonText"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            android:background="@drawable/custom_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

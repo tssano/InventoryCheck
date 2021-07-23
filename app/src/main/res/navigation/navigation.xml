@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    android:label="ホーム"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mitsui.tkmid.inventorycheck.HomeFragment"
+        android:label="ホーム"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_QRReaderFragment"
+            app:destination="@id/QRReaderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QRReaderFragment"
+        android:name="com.mitsui.tkmid.inventorycheck.QRReaderFragment"
+        android:label="QRコード入力">
+        <action
+            android:id="@+id/action_QRReaderFragment_to_QRConfirmFragment"
+            app:destination="@id/QRConfirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.mitsui.tkmid.inventorycheck.InputFragment"
+        android:label="手動入力" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.mitsui.tkmid.inventorycheck.ListFragment"
+        android:label="データ管理" />
+    <fragment
+        android:id="@+id/QRConfirmFragment"
+        android:name="com.mitsui.tkmid.inventorycheck.QRConfirmFragment"
+        android:label="QRコード入力（確認）">
+        <argument
+            android:name="QRReadValue"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_QRConfirmFragment_to_QRResultFragment"
+            app:destination="@id/QRResultFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QRResultFragment"
+        android:name="com.mitsui.tkmid.inventorycheck.QRResultFragment"
+        android:label="QRコード入力（結果）" >
+        <action
+            android:id="@+id/action_QRResultFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_QRResultFragment_to_QRReaderFragment"
+            app:destination="@id/QRReaderFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+</navigation>

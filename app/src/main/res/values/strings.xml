@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InventoryCheck</string>
+    <string name="qrReaderButtonText">QRコード入力</string>
+    <string name="inputButtonText">手動入力</string>
+    <string name="listButtonText">データ管理</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
